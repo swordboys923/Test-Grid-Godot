@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg1cmjcob1k0q"]
+
+[ext_resource type="Texture2D" uid="uid://yxfcr1yp3jwt" path="res://icon.svg" id="1_v0g5d"]
+[ext_resource type="Script" path="res://scripts/PlayerController.gd" id="2_67a0r"]
+[ext_resource type="Script" path="res://scenes/LevelGrid.gd" id="3_d78xl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PlayerController" type="Node2D" parent="."]
+script = ExtResource("2_67a0r")
+
+[node name="Icon" type="Sprite2D" parent="PlayerController"]
+texture = ExtResource("1_v0g5d")
+
+[node name="LevelGrid" type="Node2D" parent="."]
+script = ExtResource("3_d78xl")
+width = 3
+height = 4
